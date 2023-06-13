@@ -1,0 +1,53 @@
+.disclaimer {
+  background-color: aliceblue;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.disclaimerText {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: inherit;
+  font-size: 1em;
+}
+.startGameBox {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+.dataPoint {
+  display: flex;
+  border: 1px solid #000;
+  background-color: beige;
+  padding: 10px;
+}
+.textPoint {
+  background-color: antiquewhite;
+  margin-left: 15px;
+}
+
+.point {
+  color: grey;
+}
+.pointName {
+  display: flex;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: oblique;
+  font-size: 3em;
+}
+.logoPoint {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #ffffff;
+}

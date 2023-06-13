@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import StartPage from "./start_page/startPage";
+import { Routes, Route } from "react-router-dom";
+import GamePage from "./game_page/gamePage";
+import { useState } from "react";
 
 function App() {
+  const [startPropsPage, setStartPropsPage] = useState("");
+  const [endPropsPage, setEndPropsPage] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <StartPage
+              setStartPropsPage={() => setStartPropsPage}
+              setEndPropsPage={() => setEndPropsPage}
+            />
+          }
+        />
+        <Route
+          path="/game"
+          element={
+            <GamePage
+              startPropsPage={() => startPropsPage}
+              endPropsPage={() => endPropsPage}
+            />
+          }
+        />
+      </Routes>
+    </>
   );
 }
 
